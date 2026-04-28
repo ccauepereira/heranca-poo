@@ -1,4 +1,4 @@
-package anime_game;
+package simulado01_anime_game;
 
 public class DemoPersonagem {
 }
