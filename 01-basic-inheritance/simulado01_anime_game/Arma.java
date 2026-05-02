@@ -38,6 +38,7 @@ public class Arma {
 
     public int getDano() {
         return this.dano;
+
     }
 
     @Override
