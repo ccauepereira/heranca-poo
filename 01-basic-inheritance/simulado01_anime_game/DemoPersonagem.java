@@ -1,5 +1,4 @@
 package simulado01_anime_game;
-
 import java.util.Scanner;
 
 public class DemoPersonagem {

@@ -1,7 +1,6 @@
 package simulado01_animal;
 
 public class Animal {
-
     protected String nome;
     protected int idade;
 

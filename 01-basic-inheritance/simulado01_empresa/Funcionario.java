@@ -21,7 +21,7 @@ public class Funcionario {
         public Funcionario(){
             this("","",0.0f);
         }
-    public void setNome(String nome){
+        public void setNome(String nome){
         this.nome = nome;
     }
     public String getNome(){

@@ -18,7 +18,7 @@ public class FuncionarioMarketing extends Funcionario{
 
     @Override
     public float calcularBonus(){
-        return getVendasMes()*50.0f;
+        return getVendasMes()+50.0f;
     }
 
     @Override
