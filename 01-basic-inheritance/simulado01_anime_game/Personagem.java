@@ -8,7 +8,7 @@ public class Personagem {
     private int id;
     public static int idAux = 1;
 
-    public Personagem(String nome,String anime,int nivel, Arma arma){
+    public Personagem(String nome, String anime, int nivel, Arma arma){
         this.nome = nome;
         this.anime = anime;
         this.nivel = nivel;
@@ -16,45 +16,21 @@ public class Personagem {
         this.arma = new Arma(arma);
     }
 
-    public Personagem(){
-        this("","",0, new Arma());
-    }
 
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-    public String getNome(){
-        return this.nome;
-    }
-    public void setAnime(String anime){
-        this.anime = anime;
-    }
-    public String getAnime(){
-        return this.anime;
-    }
-    public void setNivel(int nivel){
-        this.nivel = nivel;
-    }
-    public int getNivel() {
-        return this.nivel;
-    }
-    public void setArma(Arma arma){
-        this.arma = new Arma(arma);
-    }
-    public Arma getArma(){
-        return new Arma(this.arma);
-    }
-    public int getId(){
-        return id;
-    }
-    public static int getProximoId(){
-        return idAux;
-    }
+    public void setNome(String nome){ this.nome = nome; }
+    public void setAnime(String anime){ this.anime = anime; }
+    public void setNivel(int nivel){ this.nivel = nivel; }
+    public void setArma(Arma arma){ this.arma = new Arma(arma); }
+
+    public String getNome(){ return this.nome; }
+    public String getAnime(){ return this.anime; }
+    public int getNivel() { return this.nivel; }
+    public Arma getArma(){ return new Arma(this.arma); }
+    public int getId(){ return id; }
+    public static int getProximoId(){ return idAux; }
 
     @Override
     public String toString() {
-        String r;
-        r = "\nID: " + id + " | " + nome + " (" + anime + ") - Nível: " + nivel + " | " + arma;
-        return r;
+        return "ID: " + id + " | " + nome + " (" + anime + ") - Nível: " + nivel + " | " + arma;
     }
 }
